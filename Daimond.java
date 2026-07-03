@@ -1,26 +1,23 @@
-import java.util.*;
-class Daimond{
-    public static void main(String args []){
-        Scanner sc=new Scanner (System.in);
-        int i,j,r,c;
-        System.out.println("enter the row");
-        r=sc.nextInt();
-        System.out.println("enter the column");
-        c=sc.nextInt();
-        for(i=1;i<=r;i++){
-            for(j=1;j<=c;j++){
-                if(i==1&& j==3)
-                    System.out.print("*");
-                else if(i==2&& (j==2||j==4))
-                    System.out.print("*");
-                else if(i==3&& (j==1||j==3||j==5))
-                    System.out.print("*");
-                else if(i==4&& (j==2||j==4))
-                    System.out.print("*");
-                else if(i==5&& j==3)
-                    System.out.print("*");
-                else
-                    System.out.print(" ");
+public class Daimond{
+    public static void main(String[] args) {
+        
+        int n=5,i,j;
+
+        for(i=1;i<=n;i++){
+            for(j=i;j<=n;j++){
+                System.out.print(" ");
+            }
+            for(j=1;j<=2*i-1;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for(i=n-1;i>=1;i--){
+            for(j=n;j>=i;j--){
+                System.out.print(" ");
+            }
+            for(j=1;j<=2*i-1 ngt5 r4;j++){
+                System.out.print("*");
             }
             System.out.println();
         }

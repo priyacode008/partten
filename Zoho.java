@@ -1,14 +1,8 @@
-import java.util.*;
-class Zoho{
+
+public class Zoho{
     public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
-        int i,j,r,c;
+        int i,j,r=5,c=20;
 
-        System.out.println("enter the row");
-        r=sc.nextInt();
-
-        System.out.println("enter the column");
-        c=sc.nextInt();
 
         for(i=1;i<=r;i++){
             for(j=1;j<=c;j++){

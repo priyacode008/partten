@@ -1,12 +1,9 @@
-import java.util.*;
-class Letter{
+
+public class Letter{
     public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
-        int i,j,r,c;
-        System.out.println("enter the row");
-        r=sc.nextInt();
-        System.out.println("enter the column");
-        c=sc.nextInt();
+        
+        int i,j,r=5,c=4;
+       
         for(i=1;i<=r;i++){
             for(j=1;j<=c;j++){
                 if(i==1&& (j==1||j==4))
